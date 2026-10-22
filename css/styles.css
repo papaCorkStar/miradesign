@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("../fonts/antonio.woff2") format("woff2-variations"), url("../fonts/antonio.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/bricolage-grotesque.woff2") format("woff2-variations"), url("../fonts/bricolage-grotesque.woff2") format("woff2");
+}
+
 :root {
   --cal: #f6f6f3;
   --cal-2: #ecebe6;

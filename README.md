@@ -20,7 +20,10 @@ js/proyectos.js   lista de proyectos, filtros, carrusel con puntitos y ficha de 
 js/proceso.js     dibujo de la casa en «cómo trabajamos»
 js/mapa.js        mapa 3D ligado al scroll (MapLibre + OpenFreeMap, datos de OpenStreetMap)
 img/logo.png      logo del estudio
+fonts/            fuentes Antonio y Bricolage Grotesque (licencia SIL Open Font License, incluida en la carpeta)
 ```
+
+Las fuentes van dentro del proyecto, así que la web se ve igual aunque el navegador bloquee Google Fonts.
 
 El menú de arriba y el pie están en las dos páginas. Si cambias un enlace o un teléfono, cámbialo en ambas.
 
