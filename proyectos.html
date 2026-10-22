@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos | mira design arquitectura</title>
+  <meta name="description" content="Proyectos de obra nueva, rehabilitación e interiorismo de mira design en Huelva.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400&family=Bricolage+Grotesque:opsz,wght@12..96,200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="header" id="header">
+    <a class="header__logo" href="index.html" aria-label="mira design arquitectura, ir al inicio">
+      <img src="img/logo.png" alt="mira design arquitectura" width="470" height="246">
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html#proyectos">proyectos</a>
+      <a href="index.html#proceso">cómo trabajamos</a>
+      <a href="index.html#estudio">estudio</a>
+      <a href="index.html#contacto" class="nav__cta">contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">
+      <span class="sr-only">Abrir menú</span>
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+
+    <section class="section page-top proyectos">
+      <div class="wrap">
+        <a class="back-link" href="index.html#proyectos">Volver al inicio</a>
+        <div class="section__head">
+          <h1 class="section__title page-title">proyectos</h1>
+          <p class="section__note">Los proyectos de esta página son de muestra para enseñar cómo se verán. <span class="demo">ejemplo no real</span></p>
+        </div>
+
+        <div class="filters" role="toolbar" aria-label="Filtrar proyectos">
+          <button class="filter is-active" data-filter="todos" aria-pressed="true">todos los proyectos</button>
+          <button class="filter" data-filter="obra-nueva" aria-pressed="false">obra nueva</button>
+          <button class="filter" data-filter="rehabilitacion" aria-pressed="false">rehabilitación</button>
+          <button class="filter" data-filter="interiorismo" aria-pressed="false">interiorismo</button>
+        </div>
+
+      </div>
+
+      <div class="slider" id="slider">
+        <ul class="slider__track" id="projects" tabindex="0" aria-label="Proyectos. Desliza a izquierda o derecha, o usa las flechas del teclado."></ul>
+      </div>
+      <div class="wrap slider__foot">
+        <div class="dots" id="dots" aria-label="Elegir proyecto"></div>
+        <p class="slider__count" id="sliderCount" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta__inner">
+        <h2 class="section__title">¿tienes un proyecto en mente?</h2>
+        <div class="cta__data">
+          <p><a class="link" href="mailto:info@miradesign.es">info@miradesign.es</a></p>
+          <p>Jonathan <a class="link" href="tel:+34605541360">605 541 360</a></p>
+          <p>Maite <a class="link" href="tel:+34679742875">679 742 875</a></p>
+        </div>
+        <a class="btn btn--solid" href="index.html#contacto">Escríbenos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <a href="index.html" aria-label="Ir al inicio"><img class="footer__logo" src="img/logo.png" alt="mira design arquitectura" width="470" height="246" loading="lazy"></a>
+      <nav class="footer__nav" aria-label="Pie">
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#proceso">Cómo trabajamos</a>
+        <a href="index.html#estudio">El estudio</a>
+        <a href="index.html#preguntas">Preguntas</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div>
+        <p>c/ Luis de Vargas, 4, 2º D<br>21001 Huelva</p>
+        <p><a href="mailto:info@miradesign.es">info@miradesign.es</a><br>
+        <a href="tel:+34605541360">605 541 360</a><br>
+        <a href="tel:+34679742875">679 742 875</a></p>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <span class="demo demo--dark">páginas pendientes</span>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <p>© <span id="year">2026</span> mira design arquitectura</p>
+      <p>Fotografías de muestra de <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, pendientes de sustituir por fotos de obras del estudio.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle">
+    <div class="modal__inner">
+      <figure class="modal__img photo">
+        <img id="modalImg" alt="">
+        <span class="photo-tag">imagen de ejemplo</span>
+      </figure>
+      <div class="modal__text">
+        <p class="modal__meta" id="modalMeta"></p>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <dl class="modal__data" id="modalData"></dl>
+        <span class="demo">ejemplo no real</span>
+        <div class="modal__nav">
+          <button class="btn" id="modalPrev">Anterior</button>
+          <button class="btn" id="modalNext">Siguiente</button>
+        </div>
+      </div>
+      <button class="modal__close" id="modalClose" aria-label="Cerrar">
+        <span></span><span></span>
+      </button>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+  <script src="js/proyectos.js"></script>
+</body>
+</html>

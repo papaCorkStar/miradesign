@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mira design arquitectura, estudio de arquitectura e interiorismo en Huelva</title>
+  <meta name="description" content="Mira es un estudio de arquitectura e interiorismo en Huelva. Jonathan y Maite desarrollan proyectos de obra nueva y rehabilitación, grandes y pequeños.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;400&family=Bricolage+Grotesque:opsz,wght@12..96,200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="header" id="header">
+    <a class="header__logo" href="#inicio" aria-label="mira design arquitectura, ir al inicio">
+      <img src="img/logo.png" alt="mira design arquitectura" width="470" height="246">
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#proyectos">proyectos</a>
+      <a href="#proceso">cómo trabajamos</a>
+      <a href="#estudio">estudio</a>
+      <a href="#contacto" class="nav__cta">contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">
+      <span class="sr-only">Abrir menú</span>
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+
+    <section class="hero" id="inicio">
+      <div class="wrap hero__intro">
+        <h1 class="hero__title">
+          <span class="line"><span>en mira, creamos</span></span>
+          <span class="line"><span>y diseñamos espacios.</span></span>
+        </h1>
+        <div class="hero__aside">
+          <p>Estudio de arquitectura e interiorismo en Huelva. Obra nueva y rehabilitación, proyectos grandes y pequeños.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#proyectos">Ver proyectos</a>
+            <a class="btn" href="#contacto">Contactar</a>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#trio" aria-label="Seguir bajando"><span></span></a>
+    </section>
+
+    <section class="trio" id="trio" aria-label="Imágenes del estudio">
+      <figure class="trio__img trio__img--a photo" data-speed="-0.10">
+        <img src="https://images.unsplash.com/photo-1549791084-5f78368b208b?w=1400&q=75&auto=format&fit=crop" alt="Volúmenes blancos bajo un cielo azul" loading="lazy">
+        <span class="photo-tag">imagen de ejemplo</span>
+      </figure>
+      <figure class="trio__img trio__img--b photo" data-speed="0.18">
+        <img src="https://images.unsplash.com/photo-1583329550487-0fa300a4cd1a?w=1000&q=75&auto=format&fit=crop" alt="Salón con luz natural entrando por un gran ventanal" loading="lazy">
+        <span class="photo-tag">imagen de ejemplo</span>
+      </figure>
+      <figure class="trio__img trio__img--c photo" data-speed="0.36">
+        <img src="https://images.unsplash.com/photo-1534094830444-3a1e21f7e3e7?w=900&q=75&auto=format&fit=crop" alt="Encuentro entre un muro blanco y un paño de madera" loading="lazy">
+        <span class="photo-tag">imagen de ejemplo</span>
+      </figure>
+    </section>
+
+    <section class="section proyectos-home" id="proyectos">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title">proyectos</h2>
+          <div class="section__side">
+            <p class="section__note">Elige un tipo para ver sus proyectos. Los proyectos son de muestra. <span class="demo">ejemplo no real</span></p>
+          </div>
+        </div>
+        <div class="panels" id="panels">
+          <a class="panel is-open" href="proyectos.html#obra-nueva" aria-label="Ver proyectos de obra nueva">
+            <img src="https://images.unsplash.com/photo-1622396481322-3b83d186701b?w=1400&q=75&auto=format&fit=crop" alt="" loading="lazy">
+            <span class="panel__label" aria-hidden="true">obra nueva</span>
+            <span class="panel__body">
+              <span class="panel__title">obra nueva</span>
+              <span class="panel__text">Casas y edificios pensados desde cero para el solar, el clima y la forma de vivir de quien los habita.</span>
+              <span class="panel__go"><span data-count="obra-nueva"></span>Ver proyectos</span>
+            </span>
+            <span class="photo-tag">imagen de ejemplo</span>
+          </a>
+          <a class="panel" href="proyectos.html#rehabilitacion" aria-label="Ver proyectos de rehabilitación">
+            <img src="https://images.unsplash.com/photo-1713121577029-bf271baec1c5?w=1400&q=75&auto=format&fit=crop" alt="" loading="lazy">
+            <span class="panel__label" aria-hidden="true">rehabilitación</span>
+            <span class="panel__body">
+              <span class="panel__title">rehabilitación</span>
+              <span class="panel__text">La arquitectura de lo construido: recuperar y transformar edificios existentes respetando lo que ya tienen de valor.</span>
+              <span class="panel__go"><span data-count="rehabilitacion"></span>Ver proyectos</span>
+            </span>
+            <span class="photo-tag">imagen de ejemplo</span>
+          </a>
+          <a class="panel" href="proyectos.html#interiorismo" aria-label="Ver proyectos de interiorismo">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&q=75&auto=format&fit=crop" alt="" loading="lazy">
+            <span class="panel__label" aria-hidden="true">interiorismo</span>
+            <span class="panel__body">
+              <span class="panel__title">interiorismo</span>
+              <span class="panel__text">Distribución, materiales, luz y mobiliario para que cada espacio funcione y se disfrute.</span>
+              <span class="panel__go"><span data-count="interiorismo"></span>Ver proyectos</span>
+            </span>
+            <span class="photo-tag">imagen de ejemplo</span>
+          </a>
+        </div>
+        <div class="tipos__all">
+          <a class="btn btn--solid" href="proyectos.html">Ver todos los proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="proceso" id="proceso">
+      <div class="proceso__track" id="procesoTrack">
+        <div class="proceso__sticky">
+          <div class="wrap proceso__grid">
+            <div class="proceso__text">
+              <h2 class="section__title">cómo trabajamos</h2>
+              <p class="section__note">Fases orientativas, pendientes de confirmar con el estudio. <span class="demo">ejemplo no real</span></p>
+              <ol class="phases" id="phases">
+                <li class="phase" data-phase="0">
+                  <span class="phase__n">01</span>
+                  <div>
+                    <h3>Escuchamos</h3>
+                    <p>Una conversación y una visita al lugar para entender qué necesitas y con qué presupuesto cuentas.</p>
+                  </div>
+                </li>
+                <li class="phase" data-phase="1">
+                  <span class="phase__n">02</span>
+                  <div>
+                    <h3>Proponemos</h3>
+                    <p>Planos y una primera estimación económica para decidir juntos el camino.</p>
+                  </div>
+                </li>
+                <li class="phase" data-phase="2">
+                  <span class="phase__n">03</span>
+                  <div>
+                    <h3>Definimos</h3>
+                    <p>El proyecto técnico: soluciones constructivas, materiales y documentación para la licencia.</p>
+                  </div>
+                </li>
+                <li class="phase" data-phase="3">
+                  <span class="phase__n">04</span>
+                  <div>
+                    <h3>Construimos</h3>
+                    <p>Seguimiento en obra hasta la entrega, para que lo construido sea fiel a lo proyectado.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <figure class="proceso__drawing" aria-hidden="true">
+              <svg id="houseSvg" viewBox="0 0 640 520" preserveAspectRatio="xMidYMid meet"></svg>
+              <figcaption class="proceso__label" id="phaseLabel">boceto</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section estudio" id="estudio">
+      <div class="wrap grid">
+        <h2 class="section__title col-head">el estudio</h2>
+        <div class="col-body">
+          <p class="lead">Dos arquitectos, <strong>Jonathan y Maite</strong>, y una idea común: «apostar por la arquitectura de lo construido».</p>
+          <p>Proyectos grandes y pequeños, con una visión clara, sencilla y funcional.</p>
+          <details class="more">
+            <summary><span class="more__open">Leer más</span><span class="more__close">Leer menos</span></summary>
+            <div class="more__body">
+              <p><strong>Mira</strong> es un proyecto que nace de las inquietudes profesionales de dos jóvenes arquitectos, Jonathan y Maite, apasionados por el interiorismo y con una idea común: «apostar por la arquitectura de lo construido».</p>
+              <p>En mira, creamos y diseñamos espacios. Desarrollamos proyectos grandes y pequeños, de arquitectura y de interiorismo, de obra nueva y de rehabilitación. Y buscamos siempre la mejor solución a cada proyecto, con una visión clara, sencilla y funcional, teniendo en cuenta la estética y por supuesto la economía.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="trayectoria" id="trayectoria">
+        <div class="trayectoria__sticky">
+          <div class="wrap">
+            <div class="timeline-wrap">
+              <div class="timeline__line" aria-hidden="true"><span class="timeline__fill"></span><span class="timeline__head"></span></div>
+              <ol class="timeline" id="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">2005</span>
+                <p>Jonathan y Maite terminan Arquitectura en Sevilla.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2005</span>
+                <p>Jonathan crea su propio estudio de arquitectura.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2007</span>
+                <p>Maite empieza como arquitecta independiente.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2012</span>
+                <p>Nace mira design. <span class="demo">ejemplo no real</span></p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">hoy</span>
+                <p>Estudio en c/ Luis de Vargas, Huelva.</p>
+              </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap team">
+        <article class="person">
+          <header class="person__head">
+            <span class="person__mono" aria-hidden="true">J</span>
+            <div>
+              <h2 class="person__name">Jonathan Ramos Martín</h2>
+              <p class="person__role">Arquitecto, nacido en Huelva en 1980</p>
+            </div>
+          </header>
+          <p class="person__trait">Emprendedor y optimista. Siempre encuentra solución a los problemas.</p>
+          <a class="person__phone" href="tel:+34605541360">605 541 360</a>
+          <details class="more">
+            <summary><span class="more__open">Leer más</span><span class="more__close">Leer menos</span></summary>
+            <div class="more__body">
+              <p>Finalizó sus estudios en la Escuela Técnica Superior de Arquitectura de Sevilla en el año 2005. Comenzó su trayectoria profesional, antes de terminar su carrera, en la empresa Dolmen Consulting Inmobiliario S.L., donde conoció a Maite. Desde finales de ese año comenzó una nueva etapa creando su propio estudio de arquitectura.</p>
+              <p>Emprendedor y optimista. Le gustan los retos difíciles. Siempre encuentra solución a los problemas.</p>
+            </div>
+          </details>
+        </article>
+
+        <article class="person">
+          <header class="person__head">
+            <span class="person__mono" aria-hidden="true">M</span>
+            <div>
+              <h2 class="person__name">Maite Ramos Casado</h2>
+              <p class="person__role">Arquitecta, nacida en Sevilla en 1979</p>
+            </div>
+          </header>
+          <p class="person__trait">Perfeccionista, detallista y muy observadora.</p>
+          <a class="person__phone" href="tel:+34679742875">679 742 875</a>
+          <details class="more">
+            <summary><span class="more__open">Leer más</span><span class="more__close">Leer menos</span></summary>
+            <div class="more__body">
+              <p>Finalizó sus estudios en la Escuela Técnica Superior de Arquitectura de Sevilla en el año 2005. Comenzó su trayectoria profesional, antes de terminar su carrera, en la empresa Dolmen Consulting Inmobiliario S.L., donde conoció a Jonathan. Desde el año 2007 trabaja como arquitecta independiente, colaborando con estudios de arquitectura y realizando sus propios proyectos de reformas y rehabilitación.</p>
+              <p>Perfeccionista, detallista y muy observadora. Le gusta que todo esté en orden.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="ubicacion" id="ubicacion" aria-labelledby="ubicacionTitle">
+      <div class="ubicacion__track" id="mapTrack">
+        <div class="ubicacion__sticky">
+          <div class="map3d" id="map3d"></div>
+          <div class="ubicacion__panel">
+            <h2 class="ubicacion__title" id="ubicacionTitle">dónde estamos</h2>
+            <ol class="zoomsteps" id="zoomSteps">
+              <li>España</li>
+              <li>Andalucía</li>
+              <li>Provincia de Huelva</li>
+              <li>Huelva</li>
+              <li>mira design</li>
+            </ol>
+            <a class="btn btn--solid ubicacion__cta" href="https://www.google.com/maps/search/?api=1&amp;query=37.2539723986,-6.9535899828" target="_blank" rel="noopener">Cómo llegar</a>
+          </div>
+          <p class="ubicacion__coords" id="mapCoords" aria-hidden="true"></p>
+          <div class="ubicacion__fallback" id="mapFallback" hidden>
+            <p>c/ Luis de Vargas, 4, 2º D, 21001 Huelva</p>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=37.2539723986,-6.9535899828" target="_blank" rel="noopener">Ver en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preguntas" id="preguntas">
+      <div class="wrap grid">
+        <div class="col-head">
+          <h2 class="section__title">preguntas frecuentes</h2>
+          <p class="section__note">Respuestas de muestra, pendientes de revisar con el estudio. <span class="demo">ejemplo no real</span></p>
+        </div>
+        <div class="col-body faq">
+          <details class="faq__item">
+            <summary>¿Hacéis proyectos pequeños, como reformar un baño o una cocina?</summary>
+            <div class="faq__body"><p>Sí. Desarrollamos proyectos grandes y pequeños: desde una vivienda completa hasta una sola estancia.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Trabajáis fuera de Huelva?</summary>
+            <div class="faq__body"><p>El estudio está en Huelva, pero mira design está donde tú estés. Cuéntanos dónde está tu proyecto y lo vemos.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Os encargáis de la licencia de obra?</summary>
+            <div class="faq__body"><p>Preparamos la documentación técnica que pide el ayuntamiento y te acompañamos en la tramitación.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuánto cuesta un proyecto?</summary>
+            <div class="faq__body"><p>Depende del tamaño y del tipo de intervención. Tras la primera conversación te enviamos una propuesta de honorarios cerrada.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo traer mi propia empresa constructora?</summary>
+            <div class="faq__body"><p>Sí. También podemos ayudarte a comparar presupuestos de varias empresas para elegir la mejor opción.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacto" id="contacto">
+      <div class="wrap grid">
+        <div class="col-head contact__side">
+          <h2 class="section__title">mira design está donde tú estés.</h2>
+          <div class="contact__data">
+            <div>
+              <h2>El estudio</h2>
+              <p>c/ Luis de Vargas, 4, 2º D<br>21001 Huelva</p>
+              <a class="arrow-link" href="https://www.google.com/maps/search/?api=1&amp;query=37.2539723986,-6.9535899828" target="_blank" rel="noopener">Cómo llegar</a>
+            </div>
+            <div>
+              <h2>Escríbenos</h2>
+              <p><a class="link" href="mailto:info@miradesign.es">info@miradesign.es</a></p>
+            </div>
+            <div>
+              <h2>Llámanos</h2>
+              <p>Jonathan Ramos <a class="link" href="tel:+34605541360">605 541 360</a></p>
+              <p>Maite Ramos <a class="link" href="tel:+34679742875">679 742 875</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-body">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__intro field--full">
+              <h2>Cuéntanos tu proyecto</h2>
+              <p>Al enviar se abrirá tu programa de correo con el mensaje preparado para info@miradesign.es.</p>
+            </div>
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-tel">Teléfono <span class="opt">(opcional)</span></label>
+              <input id="f-tel" name="telefono" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="f-tipo">Tipo de proyecto</label>
+              <select id="f-tipo" name="tipo">
+                <option>Obra nueva</option>
+                <option>Rehabilitación</option>
+                <option>Interiorismo</option>
+                <option>Reforma</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="f-msg">Mensaje</label>
+              <textarea id="f-msg" name="mensaje" rows="3" required></textarea>
+            </div>
+            <label class="check field--full">
+              <input type="checkbox" name="privacidad" required>
+              <span>He leído y acepto la política de privacidad. <span class="demo">ejemplo no real</span></span>
+            </label>
+            <div class="form__foot field--full">
+              <button class="btn btn--solid" type="submit">Preparar email</button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <a href="#inicio" aria-label="Ir al inicio"><img class="footer__logo" src="img/logo.png" alt="mira design arquitectura" width="470" height="246" loading="lazy"></a>
+      <nav class="footer__nav" aria-label="Pie">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#estudio">El estudio</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div>
+        <p>c/ Luis de Vargas, 4, 2º D<br>21001 Huelva</p>
+        <p><a href="mailto:info@miradesign.es">info@miradesign.es</a><br>
+        <a href="tel:+34605541360">605 541 360</a><br>
+        <a href="tel:+34679742875">679 742 875</a></p>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <span class="demo demo--dark">páginas pendientes</span>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <p>© <span id="year">2026</span> mira design arquitectura</p>
+      <p>Fotografías de muestra de <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, pendientes de sustituir por fotos de obras del estudio.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/proyectos.js"></script>
+  <script src="js/proceso.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>
